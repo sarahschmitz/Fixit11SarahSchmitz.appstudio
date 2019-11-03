@@ -1,5 +1,5 @@
-var exercises = ["pullups","pushups","situps","jogging","plank","curls"]
-var coreExercises = ["situps","plank"]
+let exercises = ["pushups","walking","situps","swimming", "jump rope","running","planks","biking"]
+let core = ["situps","plank"]
 
 favExercises.onshow=function(){
   selExercises.clear()   
@@ -10,12 +10,12 @@ favExercises.onshow=function(){
 selExercises.onchange=function(s){
       if (typeof(s) == "object")   
       return                    
-    else {  // the user picked something
-        selExercises.value = s   // make dropdown show choice user made
+    else { 
+        selExercises.value = s
         NSB.MsgBox("You chose" + s + " and .selection is " + selExercises.selection)
 }
 }
 
-btnExercisesChange.onclick=function(){
-  ChangeForm(mobileNav)
+btnMobileNav.onclick=function(){
+    ChangeForm(mobileNav)
 }

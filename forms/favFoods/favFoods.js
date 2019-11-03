@@ -1,8 +1,4 @@
-let goodFoods = ["pizza","apples","cookies","sushi","pasta","steak"]
-
-btnFoodsChange.onclick=function(){
-  ChangeForm(dessertVoting)
-}
+let goodFoods = ["candy","pizza","pasta","french fries","chicken","yogurt","apples"]
 
 favFoods.onshow=function(){
     lstFoods.clear()   
@@ -11,13 +7,17 @@ favFoods.onshow=function(){
 }
 
 lstFoods.onclick=function(){
-  if (typeof(s) == "object"){  // means control clicked but no selection made yet
-    return                     // do nothing
+  if (typeof(s) == "object"){  
+    return    
   } else {
-    lstFoods.value = s   // make dropdown show choice user made
+    lstFoods.value = s  
     NSB.MsgBox("s is " + s + " and .selection is " + lstFoods.selection)
   }
 }
 btnFoodSubmit.onclick=function(){
   NSB.MsgBox(`You picked ${lstFoods.selection} - that is a great choice!`)
+}
+
+btnDessertPage.onclick=function(){
+    ChangeForm(dessertVoting)
 }

@@ -29,7 +29,7 @@
   "icon": "", 
   "iconTitle": "", 
   "id": "btnFoodSubmit", 
-  "left": 247, 
+  "left": 104, 
   "mAll": "", 
   "mBottom": "", 
   "mLeft": "", 
@@ -60,7 +60,7 @@
   "size": " btn-md", 
   "style": "", 
   "toggleControl": "", 
-  "top": 268, 
+  "top": 272, 
   "value": "Submit", 
   "width": "auto"
 }
